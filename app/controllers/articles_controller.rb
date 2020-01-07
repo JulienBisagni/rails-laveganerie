@@ -23,7 +23,6 @@ class ArticlesController < ApplicationController
   end
 
   private
-
   def recipes_params
     params.require(:article).permit(:title, :body)
   end
