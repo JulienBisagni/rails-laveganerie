@@ -1,0 +1,42 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.navbar {
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  background: rgba(255, 249, 249,0.5);
+  &__logo{
+    color: $red;
+    &:hover{
+      color: $red;
+      opacity: 0.9;
+    }
+  }
+  &__navlinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    a{
+      color: $red;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    li{
+      list-style: none;
+    }
+  }
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
