@@ -1,0 +1,19 @@
+<div class="form">
+  <%= form_tag("/recipes/#{@recipe.id}", method: "patch") do %>
+    <%= label_tag(:title, "Title:") %>
+    <%= text_field_tag(:title) %>
+    <%= label_tag(:description, "Description:") %>
+    <%= text_field_tag(:description) %>
+    <%= label_tag(:image, "ImageUrl:") %>
+    <%= text_field_tag(:image) %>
+    <%= submit_tag("Modify") %>
+  <% end %>
+</div>
+<div class="recipe">
+  <h3 class="recipe__title"><%= @recipe.title %></h3>
+  <p class="recipe__description"> <%= @recipe.description %></p>
+  <%= form_tag("/recipes/#{@recipe.id}", method: "delete") do %>
+    <%= submit_tag("Cancel") %>
+  <% end %>
+  <%= link_to "Back to Index", recipes_path %>
+</div>
