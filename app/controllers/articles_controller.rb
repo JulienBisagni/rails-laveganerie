@@ -1,6 +1,6 @@
-class ArticleController < ApplicationController
+class ArticlesController < ApplicationController
   def index
-    @articles = ArticleController.all
+    @articles = Article.all
   end
 
   def create

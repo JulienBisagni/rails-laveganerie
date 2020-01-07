@@ -26,5 +26,5 @@ end
 private
 
 def recipes_params
-  params.require(:articles)permit(:title, :description, :image)
+  params.require(:recipes)permit(:title, :description, :image)
 end
